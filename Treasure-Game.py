@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🪙 TREASURE HUNT GAME 🪙")
+st.title("🪙 TREASURE GUESS GAME 🪙")
 st.write("Ahoy, matey! You are a pirate on a quest to find the hidden treasure. ⚓️")
 
 # Choose an entrance
