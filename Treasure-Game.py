@@ -3,6 +3,9 @@ import streamlit as st
 st.title("🪙 TREASURE GUESS GAME 🪙")
 st.write("Ahoy, matey! You are a pirate on a quest to find the hidden treasure. ⚓️")
 
+# Insert the image
+st.image("https://wallpapercave.com/wp/wp4363424.jpg")
+
 # Choose an entrance
 entrance = st.selectbox(
     "You are standing in front of a cave. The cave has two entrances. Which entrance do you want to choose?", 
@@ -27,7 +30,7 @@ if entrance != "Choose...":
                         st.balloons()
                         st.snow()
                         st.write("🏠 Hooray! You found the treasure in the Red house! 🏆")
-                    elif final_choice!="Red":
+                    elif final_choice != "Red":
                         st.write("🏠 Oh no! The Green house is empty. Better luck next time, pirate.")
             else:
                 st.write("🌊 Oh dear! The lake's current was too strong, and you couldn't make it across. Game Over!")
@@ -49,7 +52,7 @@ if entrance != "Choose...":
                         st.balloons()
                         st.snow()
                         st.write("🏠 Congratulations! You found the treasure in the Green house! 🎉")
-                    elif final_choice!="Green":
+                    elif final_choice != "Green":
                         st.write(f"🏠 Oh no! The {final_choice} house is empty. Better luck next time, pirate.")
             else:
                 st.write("🚶 You walked along the forest edge but got hopelessly lost. Game Over!")
